@@ -1,5 +1,4 @@
 set nocompatible
-source $VIMRUNTIME/vimrc_example.vim
 
 set t_Co=256
 set bg=dark
@@ -19,18 +18,20 @@ set nowritebackup
 set noswapfile
 
 filetype off                  " required! for vundle
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 " let Vundle manage Vundle
 " required! 
-Bundle 'gmarik/vundle'
-Bundle 'leafgarland/typescript-vim'
-Bundle 'Jinja'
-Bundle 'godlygeek/csapprox'
-Bundle 'groenewege/vim-less'
-Bundle 'elzr/vim-json'
-Bundle 'airblade/vim-gitgutter'
-Bundle 'scrooloose/nerdtree'
+Plugin 'gmarik/Vundle.vim'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'Jinja'
+Plugin 'godlygeek/csapprox'
+Plugin 'groenewege/vim-less'
+Plugin 'elzr/vim-json'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'scrooloose/nerdtree'
+call vundle#end()
+
 filetype plugin indent on     " required! for vundle
 
 " set file extensions
