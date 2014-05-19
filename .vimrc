@@ -1,4 +1,5 @@
 set nocompatible
+source $VIMRUNTIME/vimrc_example.vim
 
 set t_Co=256
 set bg=dark
@@ -9,13 +10,14 @@ set guifont=Source\ Code\ Pro\ Medium\ 12
 if has("unix")
   let s:uname = system("uname")
   if s:uname == "Darwin\n"
-    set guifont=Source\ Code\ Pro\ Light:h13
+    set guifont=Source\ Code\ Pro\ Light:h14
   endif
 endif
 
 set nobackup
 set nowritebackup
 set noswapfile
+set noundofile
 
 filetype off                  " required! for vundle
 set rtp+=~/.vim/bundle/Vundle.vim
