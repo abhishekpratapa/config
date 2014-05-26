@@ -25,7 +25,7 @@ import qualified Data.Map        as M
 -- The preferred terminal program, which is used in a binding below and by
 -- certain contrib modules.
 --
-myTerminal = "xterm -fa \"Terminus:size=10:antialias=true\""
+myTerminal = "xterm -rv -fa \"Terminus:size=10:antialias=true\""
 
 
 ------------------------------------------------------------------------
