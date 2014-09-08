@@ -2,8 +2,6 @@ set nocompatible
 source $VIMRUNTIME/vimrc_example.vim
 
 set t_Co=256
-set bg=dark
-colorscheme graphlab
 
 set tabpagemax=100
 set guifont=Source\ Code\ Pro\ Medium\ 12
@@ -32,9 +30,12 @@ Plugin 'groenewege/vim-less'
 Plugin 'elzr/vim-json'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'scrooloose/nerdtree'
+Plugin 'altercation/vim-colors-solarized'
 call vundle#end()
-
 filetype plugin indent on     " required! for vundle
+
+set bg=dark
+colorscheme solarized
 
 " set file extensions
 au BufRead,BufNewFile *.jinja2 set filetype=jinja
