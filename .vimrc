@@ -50,3 +50,8 @@ set ignorecase
 " vim-gitgutter options
 set number
 let g:gitgutter_sign_column_always = 1
+
+" Start up NERDTree automatically if no files opened
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
