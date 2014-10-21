@@ -4,7 +4,7 @@ source $VIMRUNTIME/vimrc_example.vim
 set t_Co=256
 
 set tabpagemax=100
-set guifont=Source\ Code\ Pro\ Medium\ 12
+set guifont=Source\ Code\ Pro\ Medium\ 10
 if has("unix")
   let s:uname = system("uname")
   if s:uname == "Darwin\n"

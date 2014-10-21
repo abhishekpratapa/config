@@ -4,7 +4,7 @@
 -- Modified by Zach Nation
 -- http://github.com/znation/xmonad-config
 Config {
-    font = "xft:Terminus-10",
+    font = "xft:Source Code Pro:size=10:antialias=true",
     bgColor = "#000000",
     fgColor = "#ffffff",
     lowerOnStart = True,
