@@ -25,15 +25,13 @@ import qualified Data.Map        as M
 -- The preferred terminal program, which is used in a binding below and by
 -- certain contrib modules.
 --
-myTerminal = "xterm -rv -fa \"Terminus:size=10:antialias=true\""
-
+myTerminal = "xterm -fa \"xft:Source Code Pro:size=10:antialias=true\""
 
 ------------------------------------------------------------------------
 -- Workspaces
 -- The default number of workspaces (virtual screens) and their names.
 --
 myWorkspaces = map show [1..9]
-
 
 ------------------------------------------------------------------------
 -- Window rules
