@@ -1,10 +1,8 @@
 set nocompatible
 source $VIMRUNTIME/vimrc_example.vim
 
-set t_Co=256
-
 set tabpagemax=100
-set guifont=Source\ Code\ Pro\ Medium\ 12
+set guifont=Source\ Code\ Pro\ Medium\ 10
 if has("unix")
   let s:uname = system("uname")
   if s:uname == "Darwin\n"
@@ -25,7 +23,6 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'Jinja'
-Plugin 'godlygeek/csapprox'
 Plugin 'groenewege/vim-less'
 Plugin 'elzr/vim-json'
 Plugin 'airblade/vim-gitgutter'
@@ -35,7 +32,8 @@ Plugin 'dpwright/vim-tup'
 call vundle#end()
 filetype plugin indent on     " required! for vundle
 
-set bg=dark
+syntax enable
+set background=dark
 colorscheme solarized
 
 " set file extensions
