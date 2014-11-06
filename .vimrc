@@ -29,6 +29,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'dpwright/vim-tup'
+Plugin 'Chiel92/vim-autoformat'
 call vundle#end()
 filetype plugin indent on     " required! for vundle
 
@@ -58,3 +59,7 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 set colorcolumn=80
 set cursorline
 set cursorcolumn
+
+" vim-autoformat options
+noremap <F3> :Autoformat<CR>
+let $PYTHONIOENCODING  = "UTF-8"
