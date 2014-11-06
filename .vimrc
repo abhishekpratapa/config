@@ -31,6 +31,7 @@ Plugin 'elzr/vim-json'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'dpwright/vim-tup'
 call vundle#end()
 filetype plugin indent on     " required! for vundle
 
@@ -55,3 +56,7 @@ let g:gitgutter_sign_column_always = 1
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
+" Current line/col highlighting and col80 highlighting
+set colorcolumn=80
+set cursorline
+set cursorcolumn
