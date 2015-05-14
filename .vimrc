@@ -30,6 +30,8 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'dpwright/vim-tup'
 Plugin 'Chiel92/vim-autoformat'
+Plugin 'shougo/vimproc'
+Plugin 'shougo/vimshell'
 call vundle#end()
 filetype plugin indent on     " required! for vundle
 
