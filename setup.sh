@@ -1,3 +1,3 @@
 #!/bin/sh
 
-find `pwd` -name ".*" | xargs -I {} ln -fs {} ~
+find `pwd` -name ".*" | grep -v "\/\.git$" | xargs -I {} ln -fs {} ~
