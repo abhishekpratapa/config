@@ -21,17 +21,13 @@ call vundle#begin()
 " let Vundle manage Vundle
 " required! 
 Plugin 'gmarik/Vundle.vim'
-Plugin 'leafgarland/typescript-vim'
 Plugin 'Jinja'
 Plugin 'groenewege/vim-less'
 Plugin 'elzr/vim-json'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'dpwright/vim-tup'
 Plugin 'Chiel92/vim-autoformat'
-Plugin 'shougo/vimproc'
-Plugin 'shougo/vimshell'
 call vundle#end()
 filetype plugin indent on     " required! for vundle
 
@@ -42,6 +38,7 @@ colorscheme solarized
 " set file extensions
 au BufRead,BufNewFile *.jinja2 set filetype=jinja
 au BufRead,BufNewFile *.less set filetype=css
+au BufRead,BufNewFile *.simplex set filetype=lisp
 
 " set spacing options (overrides filetypes above)
 set tabstop=2
