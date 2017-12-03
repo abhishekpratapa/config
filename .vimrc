@@ -21,11 +21,8 @@ call vundle#begin()
 " let Vundle manage Vundle
 " required! 
 Plugin 'gmarik/Vundle.vim'
-Plugin 'Jinja'
-Plugin 'groenewege/vim-less'
 Plugin 'elzr/vim-json'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'scrooloose/nerdtree'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'Chiel92/vim-autoformat'
 call vundle#end()
@@ -49,16 +46,10 @@ set smartcase
 
 " vim-gitgutter options
 set number
-let g:gitgutter_sign_column_always = 1
-
-" Start up NERDTree automatically if no files opened
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+set signcolumn=yes
 
 " Current line/col highlighting and col80 highlighting
 set colorcolumn=80
-set cursorline
-set cursorcolumn
 
 " vim-autoformat options
 noremap <F3> :Autoformat<CR>
