@@ -74,3 +74,6 @@ source $ZSH/oh-my-zsh.sh
 
 export EDITOR='vim'
 export PATH=/Applications/MacVim.app/Contents/bin/:$PATH
+
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"

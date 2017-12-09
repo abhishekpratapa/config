@@ -25,6 +25,8 @@ Plugin 'elzr/vim-json'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'Chiel92/vim-autoformat'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
 call vundle#end()
 filetype plugin indent on     " required! for vundle
 
@@ -54,3 +56,6 @@ set colorcolumn=80
 " vim-autoformat options
 noremap <F3> :Autoformat<CR>
 let $PYTHONIOENCODING  = "UTF-8"
+
+let g:vim_markdown_folding_disabled = 1
+let g:vim_markdown_math = 1
