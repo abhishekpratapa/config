@@ -32,7 +32,6 @@ filetype plugin indent on     " required! for vundle
 
 syntax enable
 set background=dark
-colorscheme solarized
 
 " set file extensions
 au BufRead,BufNewFile *.jinja2 set filetype=jinja
@@ -49,9 +48,6 @@ set smartcase
 " vim-gitgutter options
 set number
 set signcolumn=yes
-
-" Current line/col highlighting and col80 highlighting
-set colorcolumn=80
 
 " vim-autoformat options
 noremap <F3> :Autoformat<CR>
