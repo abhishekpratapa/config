@@ -74,3 +74,4 @@ source $ZSH/oh-my-zsh.sh
 
 export EDITOR='vim'
 export PATH=/Applications/MacVim.app/Contents/bin/:$PATH
+export GENERATOR='-G Ninja'
