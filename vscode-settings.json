@@ -1,0 +1,19 @@
+{
+    "extensions.ignoreRecommendations": true,
+    "editor.fontFamily": "'Source Code Pro', 'Helvetica'",
+    "editor.fontLigatures": true,
+    "explorer.confirmDelete": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "search.location": "sidebar",
+    "window.zoomLevel": 0,
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "workbench.colorTheme": "Nord",
+    "clang-format.fallbackStyle": "Google",
+    "C_Cpp.clang_format_fallbackStyle": "Google",
+    "C_Cpp.clang_format_style": "Google",
+    "editor.formatOnType": true,
+    "editor.formatOnPaste": true,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
+}

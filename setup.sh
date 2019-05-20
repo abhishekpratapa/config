@@ -16,3 +16,11 @@ if [[ "$(uname -s)" -eq "Darwin" ]]; then
   defaults write com.apple.Terminal "Startup Window Settings" -string "Nord"
 fi
 
+# Set up VSCode
+if [[ "$(uname -s)" -eq "Darwin" ]]; then
+  mkdir -p ~/Library/Application\ Support/Code/User/
+  ln -fs vscode-settings.json ~/Library/Application\ Support/Code/User/settings.json
+else
+  mkdir -p ~/.config/Code/User/
+  ln -fs vscode-settings.json ~/.config/Code/User/settings.json
+fi
