@@ -21,12 +21,12 @@ call vundle#begin()
 " let Vundle manage Vundle
 " required! 
 Plugin 'gmarik/Vundle.vim'
-Plugin 'elzr/vim-json'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'Chiel92/vim-autoformat'
-Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim'
+Plugin 'itchyny/lightline.vim'
+Plugin 'arcticicestudio/nord-vim'
 call vundle#end()
 filetype plugin indent on     " required! for vundle
 
@@ -55,3 +55,12 @@ let $PYTHONIOENCODING  = "UTF-8"
 
 let g:vim_markdown_folding_disabled = 1
 let g:vim_markdown_math = 1
+
+" remap Cmd+p to fzf
+aunmenu File.Print
+map <D-p> :Files<CR>
+
+" show lightline as status line
+set laststatus=2
+
+colorscheme nord
