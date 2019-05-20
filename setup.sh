@@ -7,3 +7,12 @@ find `pwd` -name ".*" | grep -v "\/\.git$" | xargs -I {} ln -fs {} ~
 test -d ~/.tmux/themes/nord-tmux || git clone https://github.com/arcticicestudio/nord-tmux ~/.tmux/themes/nord-tmux
 test -d ~/.vim/bundle/Vundle.vim || git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
+
+# Set nord as the Terminal.app theme
+if [[ "$(uname -s)" -eq "Darwin" ]]; then
+  theme=$(<.config-assets/Nord)
+  plutil -replace Window\ Settings.Nord -xml "$theme" ~/Library/Preferences/com.apple.Terminal.plist
+  defaults write com.apple.Terminal "Default Window Settings" -string "Nord"
+  defaults write com.apple.Terminal "Startup Window Settings" -string "Nord"
+fi
+
