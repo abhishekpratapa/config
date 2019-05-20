@@ -47,7 +47,6 @@ set smartcase
 
 " vim-gitgutter options
 set number
-set signcolumn=yes
 
 " vim-autoformat options
 noremap <F3> :Autoformat<CR>
