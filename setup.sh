@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -e
+
 # Add dotfile and other symlinks to home directory
 find `pwd` -name ".*" -maxdepth 1 | grep -v "\/\.git$" |  xargs -I {} ln -fs {} ~
 
@@ -24,3 +26,13 @@ else
   mkdir -p ~/.config/Code/User/
   ln -fs vscode-settings.json ~/.config/Code/User/settings.json
 fi
+
+# Install VSCode extensions
+which code || (echo "Could not find Visual Studio Code; install it following https://code.visualstudio.com/docs/setup/setup-overview" && false)
+code --install-extension arcticicestudio.nord-visual-studio-code
+code --install-extension ms-python.python
+code --install-extension ms-vscode.cpptools
+code --install-extension peterjausovec.vscode-docker
+code --install-extension twxs.cmake
+code --install-extension visualstudioexptteam.vscodeintellicode
+code --install-extension vscodevim.vim
